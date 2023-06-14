@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://epireve:$HF_TOKEN@huggingface.co/spaces/epireve/whisper-jax main
+        run: git push --force https://epireve:$HF_TOKEN@huggingface.co/spaces/epireve/whisper-jax main
